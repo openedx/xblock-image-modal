@@ -24,7 +24,7 @@ setup(
         'imagemodal',
     ],
     install_requires=[
-        'Django<2.0.0',
+        'Django<3.0',
         'edx-opaque-keys',
         'mock',
         'six',
