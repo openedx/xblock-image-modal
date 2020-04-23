@@ -6,15 +6,19 @@ language: python
 sudo: false
 python:
   - 3.5
+  - 3.8
 env:
-  - TOX_ENV=django111
-  - TOX_ENV=django20
-  - TOX_ENV=django21
   - TOX_ENV=django22
-  - TOX_ENV=csslint
-  - TOX_ENV=eslint
-  - TOX_ENV=pycodestyle
-  - TOX_ENV=pylint
+matrix:
+  include:
+    - python: 3.5
+      env: TOX_ENV=csslint
+    - python: 3.5
+      env: TOX_ENV=eslint
+    - python: 3.5
+      env: TOX_ENV=pycodestyle
+    - python: 3.5
+      env: TOX_ENV=pylint
 before_install:
   - "pip install -U pip"
   - export BOTO_CONFIG=/dev/null
