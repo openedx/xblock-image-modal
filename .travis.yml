@@ -20,7 +20,7 @@ cache:
   directories:
   - $HOME/.cache/pip
 install:
-- make requirements
+- make requirements_travis
 - pip install coveralls
 script:
 - tox -e $TOX_ENV
