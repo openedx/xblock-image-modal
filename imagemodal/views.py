@@ -1,7 +1,6 @@
 """
 Handle view logic for the XBlock
 """
-from __future__ import absolute_import
 from six import text_type
 from xblockutils.resources import ResourceLoader
 from xblockutils.studio_editable import StudioEditableXBlockMixin
