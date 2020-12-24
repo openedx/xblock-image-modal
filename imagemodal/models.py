@@ -6,7 +6,7 @@ from xblock.fields import Scope
 from xblock.fields import String
 
 
-class ImageModalModelMixin(object):
+class ImageModalModelMixin:
     """
     Handle data access for Image Modal XBlock instances
     """

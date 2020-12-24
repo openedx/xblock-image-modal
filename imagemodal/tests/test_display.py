@@ -4,7 +4,7 @@ Test basic XBlock display function
 """
 import unittest
 
-from mock import Mock
+from unittest.mock import Mock
 from opaque_keys.edx.locations import SlashSeparatedCourseKey
 from xblock.field_data import DictFieldData
 
