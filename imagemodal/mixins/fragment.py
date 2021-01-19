@@ -9,7 +9,7 @@ from xblock.core import XBlock
 from xblock.fragment import Fragment
 
 
-class XBlockFragmentBuilderMixin(object):
+class XBlockFragmentBuilderMixin:
     """
     Create a default XBlock fragment builder
     """
