@@ -10,19 +10,19 @@ backports.entry-points-selectable==1.1.0
     #   virtualenv
 certifi==2021.5.30
     # via requests
-charset-normalizer==2.0.4
+charset-normalizer==2.0.6
     # via requests
 coverage==5.5
     # via coveralls
 coveralls==3.2.0
     # via -r requirements/travis.in
-distlib==0.3.2
+distlib==0.3.3
     # via
     #   -r requirements/tox.txt
     #   virtualenv
 docopt==0.6.2
     # via coveralls
-filelock==3.0.12
+filelock==3.3.0
     # via
     #   -r requirements/tox.txt
     #   tox
@@ -33,7 +33,7 @@ packaging==21.0
     # via
     #   -r requirements/tox.txt
     #   tox
-platformdirs==2.3.0
+platformdirs==2.4.0
     # via
     #   -r requirements/tox.txt
     #   virtualenv
@@ -60,11 +60,11 @@ toml==0.10.2
     # via
     #   -r requirements/tox.txt
     #   tox
-tox==3.24.3
+tox==3.24.4
     # via -r requirements/tox.txt
-urllib3==1.26.6
+urllib3==1.26.7
     # via requests
-virtualenv==20.7.2
+virtualenv==20.8.1
     # via
     #   -r requirements/tox.txt
     #   tox
