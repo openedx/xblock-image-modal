@@ -36,6 +36,7 @@ class TestRender(unittest.TestCase):
     """
 
     def setUp(self):
+        super().setUp()
         self.xblock = make_an_xblock()
 
     def test_render(self):
