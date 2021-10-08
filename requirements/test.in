@@ -1,5 +1,6 @@
 # Requirements for test runs
 
 coverage
+edx-lint
 edx-opaque-keys
 mock
