@@ -13,6 +13,7 @@ class TestWorkbench(unittest.TestCase):
     """
 
     def setUp(self):
+        super().setUp()
         self.scenarios = ImageModal.workbench_scenarios()
 
     def _is_in_any_scenario(self, text):
