@@ -4,7 +4,7 @@ Image Modal XBlock
 A full-screen image modal XBlock,
 for use within the OpenEdX platform.
 
-|badge-travis|
+|badge-ci|
 |badge-coveralls|
 
 The full-screen image tool is another way of enabling participants to
@@ -106,8 +106,8 @@ Click and drag to pan around.
 
 .. |badge-coveralls| image:: https://coveralls.io/repos/github/Stanford-Online/xblock-image-modal/badge.svg?branch=master
    :target: https://coveralls.io/github/Stanford-Online/xblock-image-modal?branch=master
-.. |badge-travis| image:: https://travis-ci.org/Stanford-Online/xblock-image-modal.svg?branch=master
-   :target: https://travis-ci.org/Stanford-Online/xblock-image-modal
+.. |badge-ci| image:: https://github.com/edx/xblock-image-modal/workflows/Python%20CI/badge.svg?branch=master
+   :target: https://github.com/edx/xblock-image-modal/actions?query=workflow%3A%22Python+CI%22
 .. |image-cms-add| image:: https://s3-us-west-1.amazonaws.com/stanford-openedx-docs/xblocks/image-modal/static/images/cms-add.jpg
    :width: 100%
 .. |image-cms-advanced-module-list| image:: https://s3-us-west-1.amazonaws.com/stanford-openedx-docs/xblocks/image-modal/static/images/advanced-module-list.png
