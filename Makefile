@@ -34,9 +34,9 @@ clean:  ## Remove build artifacts
 	find . -name '*.pyc' -delete
 	find . -name __pycache__ -delete
 
-.PHONY: requirements_travis
-requirements_travis:  # Install required packages
-	pip install -r requirements/travis.txt
+.PHONY: requirements_ci
+requirements_ci:  # Install required packages
+	pip install -r requirements/ci.txt
 
 .PHONY: requirements_js
 requirements_js:  # Install required packages
@@ -73,12 +73,13 @@ $(COMMON_CONSTRAINTS_TXT):
 upgrade: export CUSTOM_COMPILE_COMMAND=make upgrade
 upgrade: $(COMMON_CONSTRAINTS_TXT)  ## update the requirements/*.txt files with the latest packages satisfying requirements/*.in
 	pip install -q -r requirements/pip_tools.txt
+	pip-compile --upgrade --allow-unsafe -o requirements/pip.txt requirements/pip.in
 	pip-compile --upgrade -o requirements/pip_tools.txt requirements/pip_tools.in
 	pip-compile --upgrade -o requirements/base.txt requirements/base.in
 	pip-compile --upgrade -o requirements/test.txt requirements/test.in
 	pip-compile --upgrade -o requirements/quality.txt requirements/quality.in
 	pip-compile --upgrade -o requirements/tox.txt requirements/tox.in
-	pip-compile --upgrade -o requirements/travis.txt requirements/travis.in
+	pip-compile --upgrade -o requirements/ci.txt requirements/ci.in
 
 _NAME=image-modal:latest
 _VOLUME=-v '$(PWD):/root/xblock'
