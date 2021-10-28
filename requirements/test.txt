@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-astroid==2.8.3
+astroid==2.8.4
     # via
     #   pylint
     #   pylint-celery
@@ -19,7 +19,7 @@ code-annotations==1.2.0
     # via edx-lint
 coverage==6.0.2
     # via -r requirements/test.in
-edx-lint==5.2.0
+edx-lint==5.2.1
     # via -r requirements/test.in
 edx-opaque-keys==2.2.2
     # via -r requirements/test.in
