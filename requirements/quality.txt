@@ -27,7 +27,7 @@ code-annotations==1.2.0
     # via
     #   -r requirements/test.txt
     #   edx-lint
-coverage==6.0.2
+coverage==6.1.1
     # via -r requirements/test.txt
 django==2.2.24
     # via
@@ -41,7 +41,7 @@ fs==2.4.13
     # via
     #   -r requirements/base.txt
     #   xblock
-isort==5.9.3
+isort==5.10.0
     # via
     #   -r requirements/test.txt
     #   pylint
@@ -53,7 +53,7 @@ lazy-object-proxy==1.6.0
     # via
     #   -r requirements/test.txt
     #   astroid
-lxml==4.6.3
+lxml==4.6.4
     # via
     #   -r requirements/base.txt
     #   xblock
@@ -171,7 +171,7 @@ webob==1.8.7
     # via
     #   -r requirements/base.txt
     #   xblock
-wrapt==1.13.2
+wrapt==1.13.3
     # via
     #   -r requirements/test.txt
     #   astroid
