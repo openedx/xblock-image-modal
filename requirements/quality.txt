@@ -8,7 +8,11 @@ appdirs==1.4.4
     # via
     #   -r requirements/base.txt
     #   fs
-astroid==2.8.4
+asgiref==3.4.1
+    # via
+    #   -r requirements/base.txt
+    #   django
+astroid==2.8.5
     # via
     #   -r requirements/test.txt
     #   pylint
@@ -29,7 +33,7 @@ code-annotations==1.2.0
     #   edx-lint
 coverage==6.1.2
     # via -r requirements/test.txt
-django==2.2.24
+django==3.2.9
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.txt
@@ -37,7 +41,7 @@ edx-lint==5.2.1
     # via -r requirements/test.txt
 edx-opaque-keys==2.2.2
     # via -r requirements/test.txt
-fs==2.4.13
+fs==2.4.14
     # via
     #   -r requirements/base.txt
     #   xblock
@@ -57,7 +61,7 @@ lxml==4.6.4
     # via
     #   -r requirements/base.txt
     #   xblock
-mako==1.1.5
+mako==1.1.6
     # via
     #   -r requirements/base.txt
     #   xblock-utils
@@ -129,7 +133,7 @@ pyyaml==6.0
     #   -r requirements/test.txt
     #   code-annotations
     #   xblock
-simplejson==3.17.5
+simplejson==3.17.6
     # via
     #   -r requirements/base.txt
     #   xblock-utils
@@ -157,7 +161,7 @@ toml==0.10.2
     # via
     #   -r requirements/test.txt
     #   pylint
-typing-extensions==3.10.0.2
+typing-extensions==4.0.0
     # via
     #   -r requirements/test.txt
     #   astroid
