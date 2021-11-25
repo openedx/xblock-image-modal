@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-astroid==2.8.5
+astroid==2.8.6
     # via
     #   pylint
     #   pylint-celery
@@ -35,7 +35,7 @@ mccabe==0.6.1
     # via pylint
 mock==4.0.3
     # via -r requirements/test.in
-pbr==5.7.0
+pbr==5.8.0
     # via stevedore
 platformdirs==2.4.0
     # via pylint
