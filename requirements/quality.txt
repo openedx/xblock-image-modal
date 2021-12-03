@@ -12,7 +12,7 @@ asgiref==3.4.1
     # via
     #   -r requirements/base.txt
     #   django
-astroid==2.8.6
+astroid==2.9.0
     # via
     #   -r requirements/test.txt
     #   pylint
@@ -31,7 +31,7 @@ code-annotations==1.2.0
     # via
     #   -r requirements/test.txt
     #   edx-lint
-coverage==6.1.2
+coverage==6.2
     # via -r requirements/test.txt
 django==3.2.9
     # via
@@ -88,7 +88,7 @@ platformdirs==2.4.0
     #   pylint
 pycodestyle==2.8.0
     # via -r requirements/quality.in
-pylint==2.11.1
+pylint==2.12.1
     # via
     #   -r requirements/quality.in
     #   -r requirements/test.txt
@@ -109,7 +109,7 @@ pylint-plugin-utils==0.6
     #   -r requirements/test.txt
     #   pylint-celery
     #   pylint-django
-pymongo==3.12.1
+pymongo==4.0
     # via
     #   -r requirements/test.txt
     #   edx-opaque-keys
@@ -161,7 +161,7 @@ toml==0.10.2
     # via
     #   -r requirements/test.txt
     #   pylint
-typing-extensions==4.0.0
+typing-extensions==4.0.1
     # via
     #   -r requirements/test.txt
     #   astroid
