@@ -39,7 +39,7 @@ pbr==5.8.0
     # via stevedore
 platformdirs==2.4.0
     # via pylint
-pylint==2.12.1
+pylint==2.12.2
     # via
     #   edx-lint
     #   pylint-celery
@@ -53,7 +53,7 @@ pylint-plugin-utils==0.6
     # via
     #   pylint-celery
     #   pylint-django
-pymongo==4.0
+pymongo==4.0.1
     # via edx-opaque-keys
 python-slugify==5.0.2
     # via code-annotations

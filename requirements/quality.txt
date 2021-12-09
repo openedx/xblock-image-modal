@@ -33,7 +33,7 @@ code-annotations==1.2.0
     #   edx-lint
 coverage==6.2
     # via -r requirements/test.txt
-django==3.2.9
+django==3.2.10
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.txt
@@ -88,7 +88,7 @@ platformdirs==2.4.0
     #   pylint
 pycodestyle==2.8.0
     # via -r requirements/quality.in
-pylint==2.12.1
+pylint==2.12.2
     # via
     #   -r requirements/quality.in
     #   -r requirements/test.txt
@@ -109,7 +109,7 @@ pylint-plugin-utils==0.6
     #   -r requirements/test.txt
     #   pylint-celery
     #   pylint-django
-pymongo==4.0
+pymongo==4.0.1
     # via
     #   -r requirements/test.txt
     #   edx-opaque-keys
