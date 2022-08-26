@@ -2,10 +2,10 @@
   "scripts": {
     "test": "tox"
   },
-  "devDependencies": [
-    "draggabilly==1.2.4",
-    "eslint==6.8.0",
-    "less",
-    "csslint"
-  ]
+  "devDependencies": {
+    "draggabilly": "1.2.4",
+    "eslint": "6.8.0",
+    "less": "3.13.1",
+    "csslint": "1.0.5"
+  }
 }
