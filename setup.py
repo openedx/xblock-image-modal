@@ -81,7 +81,7 @@ def is_requirement(line):
 
 
 setup(
-    name='edx-xblock-image-modal',
+    name='openedx-xblock-image-modal',
     version=version,
     description=description,
     long_description=long_description,
