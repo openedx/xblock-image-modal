@@ -108,6 +108,7 @@ setup(
             'scenarios/*.xml',
             'templates/*',
             'translations/*/*/*',
+            'conf',
         ],
     },
     classifiers=[

@@ -13,6 +13,12 @@ ifeq ($(strip $(po_files)),)
     po_files = $(translation_root)/en/LC_MESSAGES/django.po
 endif
 
+WORKING_DIR := imagemodal
+EXTRACT_DIR := $(WORKING_DIR)/conf/locale/en/LC_MESSAGES
+EXTRACTED_DJANGO_PARTIAL := $(EXTRACT_DIR)/django-partial.po
+EXTRACTED_DJANGOJS_PARTIAL := $(EXTRACT_DIR)/djangojs-partial.po
+EXTRACTED_DJANGO := $(EXTRACT_DIR)/django.po
+
 .PHONY: help
 help:  ## This.
 	@perl -ne 'print if /^[a-zA-Z_-]+:.*## .*$$/' $(MAKEFILE_LIST) \
@@ -105,3 +111,14 @@ docker_shell:
 docker_static: ; make build_docker; $(run-in-docker)  ## Compile static assets in docker container
 docker_translations: ; make build_docker; $(run-in-docker)  ## Update translation files in docker container
 docker_test: ; make build_docker; $(run-in-docker)  ## Run tests in docker container
+
+extract_translations: ## extract strings to be translated, outputting .po files
+	cd $(WORKING_DIR) && i18n_tool extract
+	mv $(EXTRACTED_DJANGO_PARTIAL) $(EXTRACTED_DJANGO)
+	# Safely concatenate djangojs if it exists
+	( test -f $(EXTRACTED_DJANGOJS_PARTIAL) && \
+	  msgcat $(EXTRACTED_DJANGO) $(EXTRACTED_DJANGOJS_PARTIAL) -o $(EXTRACTED_DJANGO) \
+	) || ! test -f $(EXTRACTED_DJANGOJS_PARTIAL)
+	rm -rf $(EXTRACTED_DJANGOJS_PARTIAL)
+	sed -i'' -e 's/nplurals=INTEGER/nplurals=2/' $(EXTRACTED_DJANGO)
+	sed -i'' -e 's/plural=EXPRESSION/plural=\(n != 1\)/' $(EXTRACTED_DJANGO)
