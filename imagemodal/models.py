@@ -65,7 +65,6 @@ class ImageModalModelMixin:
         default='',
         scope=Scope.settings,
         help=_(
-            'This field allows you to add alternate or descriptive text'
-            'that pertains to your image.'
+            'This field allows you to add alternate or descriptive text that pertains to your image.'
         ),
     )
