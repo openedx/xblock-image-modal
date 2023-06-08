@@ -69,7 +69,7 @@ mako==1.2.4
     # via
     #   -r requirements/base.txt
     #   xblock-utils
-markupsafe==2.1.2
+markupsafe==2.1.3
     # via
     #   -r requirements/base.txt
     #   -r requirements/test.txt
@@ -168,7 +168,7 @@ tomlkit==0.11.8
     # via
     #   -r requirements/test.txt
     #   pylint
-typing-extensions==4.6.2
+typing-extensions==4.6.3
     # via
     #   -r requirements/base.txt
     #   -r requirements/test.txt
