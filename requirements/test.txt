@@ -39,7 +39,7 @@ mock==5.0.2
     # via -r requirements/test.in
 pbr==5.11.1
     # via stevedore
-platformdirs==3.7.0
+platformdirs==3.8.0
     # via pylint
 pylint==2.17.4
     # via
@@ -73,7 +73,7 @@ tomli==2.0.1
     # via pylint
 tomlkit==0.11.8
     # via pylint
-typing-extensions==4.6.3
+typing-extensions==4.7.0
     # via
     #   astroid
     #   pylint
