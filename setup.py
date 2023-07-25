@@ -123,7 +123,6 @@ setup(
         'Topic :: Education',
         'Topic :: Internet :: WWW/HTTP',
         'Framework :: Django',
-        'Framework :: Django :: 3.1',
         'Framework :: Django :: 3.2',
         'Framework :: Django :: 4.2',
     ],
