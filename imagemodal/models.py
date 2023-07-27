@@ -1,7 +1,7 @@
 """
 Handle data access logic for the XBlock
 """
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import ugettext_lazy as _
 from xblock.fields import Scope
 from xblock.fields import String
 
