@@ -17,11 +17,11 @@ astroid==2.15.6
     #   -r requirements/test.txt
     #   pylint
     #   pylint-celery
-boto3==1.28.42
+boto3==1.28.47
     # via
     #   -r requirements/base.txt
     #   fs-s3fs
-botocore==1.31.42
+botocore==1.31.47
     # via
     #   -r requirements/base.txt
     #   boto3
