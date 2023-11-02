@@ -17,11 +17,11 @@ astroid==3.0.1
     #   -r requirements/test.txt
     #   pylint
     #   pylint-celery
-boto3==1.28.68
+boto3==1.28.76
     # via
     #   -r requirements/base.txt
     #   fs-s3fs
-botocore==1.31.68
+botocore==1.31.76
     # via
     #   -r requirements/base.txt
     #   boto3
@@ -46,12 +46,12 @@ dill==0.3.7
     # via
     #   -r requirements/test.txt
     #   pylint
-django==3.2.22
+django==3.2.23
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.txt
     #   openedx-django-pyfs
-edx-lint==5.3.4
+edx-lint==5.3.6
     # via -r requirements/test.txt
 edx-opaque-keys==2.5.1
     # via -r requirements/test.txt
@@ -130,7 +130,7 @@ pylint-celery==0.3
     # via
     #   -r requirements/test.txt
     #   edx-lint
-pylint-django==2.5.4
+pylint-django==2.5.5
     # via
     #   -r requirements/test.txt
     #   edx-lint
