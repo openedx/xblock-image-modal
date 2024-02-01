@@ -15,11 +15,11 @@ click==8.1.7
     #   edx-lint
 click-log==0.4.0
     # via edx-lint
-code-annotations==1.5.0
+code-annotations==1.6.0
     # via edx-lint
-coverage==7.4.0
+coverage==7.4.1
     # via -r requirements/test.in
-dill==0.3.7
+dill==0.3.8
     # via pylint
 edx-lint==5.3.6
     # via -r requirements/test.in
@@ -37,7 +37,7 @@ mock==5.1.0
     # via -r requirements/test.in
 pbr==6.0.0
     # via stevedore
-platformdirs==4.1.0
+platformdirs==4.2.0
     # via pylint
 pylint==3.0.3
     # via
@@ -55,7 +55,7 @@ pylint-plugin-utils==0.8.2
     #   pylint-django
 pymongo==3.13.0
     # via edx-opaque-keys
-python-slugify==8.0.1
+python-slugify==8.0.3
     # via code-annotations
 pyyaml==6.0.1
     # via code-annotations
