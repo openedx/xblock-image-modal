@@ -17,7 +17,7 @@ click-log==0.4.0
     # via edx-lint
 code-annotations==1.6.0
     # via edx-lint
-coverage==7.4.1
+coverage==7.4.2
     # via -r requirements/test.in
 dill==0.3.8
     # via pylint
