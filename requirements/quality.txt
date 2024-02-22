@@ -31,7 +31,7 @@ code-annotations==1.6.0
     # via
     #   -r requirements/test.txt
     #   edx-lint
-coverage==7.4.1
+coverage==7.4.2
     # via -r requirements/test.txt
 dill==0.3.8
     # via
