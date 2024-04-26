@@ -8,7 +8,7 @@ from django.template.context import Context
 from xblock.core import XBlock
 try:
     from web_fragments.fragment import Fragment
-except:
+except ImportError:
     # for backwards compatibility with quince and prior releases
     from xblock.fragment import Fragment
 
