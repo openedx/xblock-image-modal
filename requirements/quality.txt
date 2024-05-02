@@ -8,7 +8,7 @@ appdirs==1.4.4
     # via
     #   -r requirements/base.txt
     #   fs
-asgiref==3.7.2
+asgiref==3.8.1
     # via
     #   -r requirements/base.txt
     #   django
@@ -17,6 +17,10 @@ astroid==3.1.0
     #   -r requirements/test.txt
     #   pylint
     #   pylint-celery
+backports-zoneinfo==0.2.1
+    # via
+    #   -r requirements/base.txt
+    #   django
 click==8.1.7
     # via
     #   -r requirements/test.txt
@@ -27,23 +31,27 @@ click-log==0.4.0
     # via
     #   -r requirements/test.txt
     #   edx-lint
-code-annotations==1.6.0
+code-annotations==1.8.0
     # via
     #   -r requirements/test.txt
     #   edx-lint
-coverage==7.4.3
+coverage==7.5.0
     # via -r requirements/test.txt
 dill==0.3.8
     # via
     #   -r requirements/test.txt
     #   pylint
-django==3.2.24
+django==4.2.11
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.txt
+dnspython==2.6.1
+    # via
+    #   -r requirements/test.txt
+    #   pymongo
 edx-lint==5.3.6
     # via -r requirements/test.txt
-edx-opaque-keys==2.5.1
+edx-opaque-keys==2.9.0
     # via -r requirements/test.txt
 fs==2.4.16
     # via
@@ -57,11 +65,11 @@ jinja2==3.1.3
     # via
     #   -r requirements/test.txt
     #   code-annotations
-lxml==5.1.0
+lxml==5.2.1
     # via
     #   -r requirements/base.txt
     #   xblock
-mako==1.3.2
+mako==1.3.3
     # via
     #   -r requirements/base.txt
     #   xblock
@@ -82,7 +90,7 @@ pbr==6.0.0
     # via
     #   -r requirements/test.txt
     #   stevedore
-platformdirs==4.2.0
+platformdirs==4.2.1
     # via
     #   -r requirements/test.txt
     #   pylint
@@ -109,11 +117,11 @@ pylint-plugin-utils==0.8.2
     #   -r requirements/test.txt
     #   pylint-celery
     #   pylint-django
-pymongo==3.13.0
+pymongo==4.4.0
     # via
     #   -r requirements/test.txt
     #   edx-opaque-keys
-python-dateutil==2.8.2
+python-dateutil==2.9.0.post0
     # via
     #   -r requirements/base.txt
     #   xblock
@@ -124,7 +132,6 @@ python-slugify==8.0.4
 pytz==2024.1
     # via
     #   -r requirements/base.txt
-    #   django
     #   xblock
 pyyaml==6.0.1
     # via
@@ -143,7 +150,7 @@ six==1.16.0
     #   edx-lint
     #   fs
     #   python-dateutil
-sqlparse==0.4.4
+sqlparse==0.5.0
     # via
     #   -r requirements/base.txt
     #   django
@@ -164,7 +171,7 @@ tomlkit==0.12.4
     # via
     #   -r requirements/test.txt
     #   pylint
-typing-extensions==4.10.0
+typing-extensions==4.11.0
     # via
     #   -r requirements/base.txt
     #   -r requirements/test.txt
@@ -172,7 +179,7 @@ typing-extensions==4.10.0
     #   astroid
     #   edx-opaque-keys
     #   pylint
-web-fragments==2.1.0
+web-fragments==2.2.0
     # via
     #   -r requirements/base.txt
     #   xblock
@@ -180,7 +187,7 @@ webob==1.8.7
     # via
     #   -r requirements/base.txt
     #   xblock
-xblock==1.10.0
+xblock==4.0.1
     # via -r requirements/base.txt
 
 # The following packages are considered to be unsafe in a requirements file:
