@@ -6,7 +6,12 @@ split into its own library.
 """
 from django.template.context import Context
 from xblock.core import XBlock
-from xblock.fragment import Fragment
+
+
+try:
+    from web_fragments.fragment import Fragment
+except Exception:  # pylint: disable=broad-except
+    from xblock.fragment import Fragment   # For backward compatibility with quince and earlier.
 
 
 class XBlockFragmentBuilderMixin:

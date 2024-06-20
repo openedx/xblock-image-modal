@@ -7,7 +7,7 @@ from os import path
 
 from setuptools import setup
 
-version = '3.2.0'
+version = '3.3.0'
 description = __doc__.strip().split('\n')[0]
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.rst')) as file_in:
@@ -120,10 +120,10 @@ setup(
         'Programming Language :: JavaScript',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.11',
         'Topic :: Education',
         'Topic :: Internet :: WWW/HTTP',
         'Framework :: Django',
-        'Framework :: Django :: 3.2',
         'Framework :: Django :: 4.2',
     ],
     test_suite='imagemodal.tests',
