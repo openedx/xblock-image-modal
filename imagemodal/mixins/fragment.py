@@ -10,7 +10,7 @@ from xblock.core import XBlock
 
 try:
     from web_fragments.fragment import Fragment
-except Exception:  # pylint: disable=broad-except
+except Exception:
     from xblock.fragment import Fragment   # For backward compatibility with quince and earlier.
 
 
@@ -56,14 +56,9 @@ class XBlockFragmentBuilderMixin:
         )
         return fragment
 
-    def build_fragment(
-            self,
-            template='',
-            context=None,
-            css=None,
-            js=None,
-            js_init=None,
-    ):
+    def build_fragment(self, *, template='',
+                       context=None, css=None,
+                       js=None, js_init=None):
         """
         Creates a fragment for display.
         """
