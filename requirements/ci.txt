@@ -20,7 +20,7 @@ colorama==0.4.6
     # via
     #   -r requirements/tox.txt
     #   tox
-coverage[toml]==7.6.4
+coverage[toml]==7.6.7
     # via coveralls
 coveralls==4.0.1
     # via -r requirements/ci.in
@@ -37,7 +37,7 @@ filelock==3.16.1
     #   virtualenv
 idna==3.10
     # via requests
-packaging==24.1
+packaging==24.2
     # via
     #   -r requirements/tox.txt
     #   pyproject-api
