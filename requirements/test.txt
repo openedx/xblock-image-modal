@@ -4,20 +4,20 @@
 #
 #    make upgrade
 #
-astroid==3.3.5
+astroid==3.3.8
     # via
     #   pylint
     #   pylint-celery
-click==8.1.7
+click==8.1.8
     # via
     #   click-log
     #   code-annotations
     #   edx-lint
 click-log==0.4.0
     # via edx-lint
-code-annotations==1.8.0
+code-annotations==2.1.0
     # via edx-lint
-coverage==7.6.4
+coverage==7.6.9
     # via -r requirements/test.in
 dill==0.3.9
     # via pylint
@@ -29,7 +29,7 @@ edx-opaque-keys==2.11.0
     # via -r requirements/test.in
 isort==5.13.2
     # via pylint
-jinja2==3.1.4
+jinja2==3.1.5
     # via code-annotations
 markupsafe==3.0.2
     # via jinja2
@@ -41,7 +41,7 @@ pbr==6.1.0
     # via stevedore
 platformdirs==4.3.6
     # via pylint
-pylint==3.3.1
+pylint==3.3.3
     # via
     #   edx-lint
     #   pylint-celery
@@ -61,9 +61,9 @@ python-slugify==8.0.4
     # via code-annotations
 pyyaml==6.0.2
     # via code-annotations
-six==1.16.0
+six==1.17.0
     # via edx-lint
-stevedore==5.3.0
+stevedore==5.4.0
     # via
     #   code-annotations
     #   edx-opaque-keys
